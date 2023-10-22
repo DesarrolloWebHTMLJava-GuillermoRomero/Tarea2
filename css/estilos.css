@@ -1,0 +1,120 @@
+/*
+* INDICE DEL CSS
+*
+* 1.0 - Globals
+* 2.0 - Fonts
+* 3.0 - Nav
+* 4.0 - Imagen
+* 5.0 - Footer/p
+* 6.0 - MediaQueries Tableta
+* 7.0 - MediaQueries Smarthphone
+*/
+/*** 1.0 - Globals ***/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*** 1.0 - Globals ***/
+
+/*** 2.0 - Fonts ***/
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    line-height: 1.4em;
+}
+
+/*** 2.0 - Fonts ***/
+
+/*** 3.0 - Nav ***/
+
+nav ul{
+    display: flex;
+
+    list-style: none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active){
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+}
+
+/*** 3.0 - Nav ***/
+
+/*** 4.0 - Imagen ***/
+.img { /* Aqui tenemos estilos para nuestra etiqueta img, de la imagen procesada*/
+    margin: 12 0;
+}
+img {
+    margin: auto;;
+    display: block;
+}
+/*** 4.0 - Imagen ***/
+
+
+/*** 5.0 - Footer/p ***/
+.pie {/* Aqui tenemos estilos para nuestra clase pie que la definimos en nuestro HTML*/
+    background-color: #333;
+}
+.example {
+    padding: 20px;
+    color: white;
+}
+p{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    text-align: left;
+}
+/*** 5.0 - Footer/p ***/
+
+/*** 6.0 - MediaQueries Tableta ***/
+@media (max-width: 800px) {
+    .example {
+        background: rgb(36, 8, 159); /*** Aqui hacemos cambio de color ***/
+        text-align: center;
+    }
+    img {
+        width: 750px;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/*** 6.0 - MediaQueries Tableta ***/
+
+/*** 7.0 - MediaQueries Smarthphone ***/
+
+@media (max-width: 600px) {
+    .example {
+        background: rgb(4, 133, 81); /*** Ahora ponemos color verde***/
+        text-align: center;
+    }
+    img {
+        width: 400px;
+    }
+    nav ul {
+        flex-direction: column;/* Esta linea hace que nuestro menu se alinea en columna*/
+        text-align: center;
+    }
+}
+
+/*** 7.0 - MediaQueries Smarthphone ***/
